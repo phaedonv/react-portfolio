@@ -4,7 +4,7 @@ import './project.css'
 
 const Project = () => {
   return (
-    <div>
+    <div className='p'>
         card
     </div>
   )
