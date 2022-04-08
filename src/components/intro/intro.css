@@ -12,6 +12,7 @@
 
 .i-right {
     flex: 1;
+    position: relative;
 }
 
 .i-left-wrapper {
@@ -63,4 +64,28 @@
     100%{
         transform: translateY(-200px);
     }
+}
+
+.i-scroll {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   bottom: 20px; 
+}
+
+.i-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.i-bg {
+    clip-path: polygon(38% 44%, 32% 34%, 38% 6%, 58% 0, 80% 7%, 96% 18%, 100% 49%, 100% 100%, 86% 100%, 53% 100%, 26% 97%, 0 29%);
+    background-color: #52b256;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
