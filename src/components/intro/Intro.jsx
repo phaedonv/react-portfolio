@@ -17,6 +17,11 @@ const Intro = () => {
               <div className="i-title-item">Cyber Security Enthusiast</div>
             </div>
           </div>
+          <div className="i-desc">
+              I am a full stack web developer graduate, seeking new opportunities! 
+              Being motivated and eager to learn new skills and technologies, 
+              I always look for new ways to evolve.
+          </div>
         </div>
       </div>
       <div className="i-right">
