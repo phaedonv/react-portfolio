@@ -5,7 +5,14 @@ import './project.css'
 const Project = () => {
   return (
     <div className='p'>
-        card
+        <div className="p-browser">
+            <div className='p-circle'></div>
+            <div className='p-circle'></div>
+            <div className='p-circle'></div>
+        </div>
+        <a href="https://tunesoffreedom.herokuapp.com/" target="_blank" rel="noreferrer">
+            <img src="" alt="" className="p-img" />
+        </a>
     </div>
   )
 }
