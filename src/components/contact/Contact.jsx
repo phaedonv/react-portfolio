@@ -5,13 +5,15 @@ import logo from "../../img/shell.png"
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
+const usid = process.env.REACT_APP_USER_ID;
+
 const Contact = () => {
     const formRef = useRef()
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        emailjs.sendForm('service_b9h4675', 'template_a9wtzdm', formRef.current, 'lJ1i_MKF2HdfAXStN')
+        emailjs.sendForm('service_b9h4675', 'template_a9wtzdm', formRef.current, usid)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
