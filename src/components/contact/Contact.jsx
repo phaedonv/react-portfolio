@@ -6,14 +6,14 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
-    const formRef = useRef()
-    
-    const usId = process.env.REACT_APP_USER_ID
+    const formRef = useRef();
+
+    const API_KEY = process.env.REACT_APP_API_KEY;
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        emailjs.sendForm('service_b9h4675', 'template_a9wtzdm', formRef.current, usId)
+        emailjs.sendForm('service_b9h4675', 'template_a9wtzdm', formRef.current, API_KEY)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
