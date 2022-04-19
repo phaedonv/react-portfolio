@@ -2,13 +2,13 @@ import React from 'react'
 
 import './contact.css'
 import logo from "../../img/shell.png"
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const formRef = useRef();
-
     const API_KEY = process.env.REACT_APP_API_KEY;
+    const [done, setDone] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -16,6 +16,7 @@ const Contact = () => {
         emailjs.sendForm('service_b9h4675', 'template_a9wtzdm', formRef.current, API_KEY)
             .then((result) => {
                 console.log(result.text);
+                setDone(true);
             }, (error) => {
                 console.log(error.text);
             });
@@ -52,6 +53,7 @@ const Contact = () => {
                     <input type="text" placeholder="Email" name="user_email" />
                     <textarea rows="5" placeholder='Message' name="message" />
                     <button>Submit</button>
+                    {done && "Thank you for contacting me <3"}
                 </form>
             </div>
         </div>
