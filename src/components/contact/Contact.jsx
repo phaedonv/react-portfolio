@@ -2,8 +2,22 @@ import React from 'react'
 
 import './contact.css'
 import logo from "../../img/shell.png"
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+    const formRef = useRef()
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm('service_b9h4675', 'template_a9wtzdm', formRef.current, 'lJ1i_MKF2HdfAXStN')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
   return (
     <div className='c'>
         <div className="c-bg"></div>
@@ -30,7 +44,7 @@ const Contact = () => {
                     <b>What’s your story?</b> Get in touch. Always available for
                     freelancing if the right project comes along.
                 </p>
-                <form>
+                <form ref ={formRef} onSubmit={handleSubmit}>
                     <input type="text" placeholder="Name" name="user_name" />
                     <input type="text" placeholder="Subject" name="user_subject" />
                     <input type="text" placeholder="Email" name="user_email" />
