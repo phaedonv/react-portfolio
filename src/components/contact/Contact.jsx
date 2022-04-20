@@ -48,10 +48,10 @@ const Contact = () => {
                     freelancing if the right project comes along.
                 </p>
                 <form ref ={formRef} onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Name" name="user_name" />
+                    <input type="text" placeholder="Name" name="user_name" required/>
                     <input type="text" placeholder="Subject" name="user_subject" />
-                    <input type="text" placeholder="Email" name="user_email" />
-                    <textarea rows="5" placeholder='Message' name="message" />
+                    <input type="email" placeholder="Email" name="user_email" required pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"/>
+                    <textarea rows="5" placeholder='Message' name="message" required/>
                     <button>Submit</button>
                     <h4>{done && "Thank you for contacting me <3"}</h4>
                 </form>
