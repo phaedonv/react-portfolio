@@ -4,6 +4,8 @@ import './contact.css'
 import logo from "../../img/shell.png"
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { useContext } from 'react'
+import { ThemeContext } from '../../context'
 
 /* fontawesome 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,6 +18,8 @@ const Contact = () => {
     const formRef = useRef();
     const API_KEY = process.env.REACT_APP_API_KEY;
     const [done, setDone] = useState(false);
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -55,10 +59,10 @@ const Contact = () => {
                     freelancing if the right project comes along.
                 </p>
                 <form ref ={formRef} onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Name" name="user_name" required/>
-                    <input type="text" placeholder="Subject" name="user_subject" />
-                    <input type="email" placeholder="Email" name="user_email" required pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"/>
-                    <textarea rows="5" placeholder='Message' name="message" required/>
+                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" required/>
+                    <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
+                    <input style={{backgroundColor: darkMode && "#333"}} type="email" placeholder="Email" name="user_email" required pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"/>
+                    <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder='Message' name="message" required/>
                     <button>Submit</button>
                     <h4>{done && "Thank you for contacting me <3"}</h4>
                 </form>
