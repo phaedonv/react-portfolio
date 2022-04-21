@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react/cjs/react.production.min";
+import { createContext, useReducer } from "react";
 
 export const ThemeContext = createContext();
 
@@ -17,8 +17,6 @@ export const ThemeProvider = (props) => {
     const [state, dispatch] = useReducer(themeReducer, INITIAL_STATE)
 
     return (
-        <ThemeProvider values={state, dispatch}>
-            {props.children}
-        </ThemeProvider>
-    )
-}
+        <ThemeContext.Provider value={{state, dispatch}}>{props.children}</ThemeContext.Provider>
+    );
+};
