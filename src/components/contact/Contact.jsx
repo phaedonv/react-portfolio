@@ -5,6 +5,13 @@ import logo from "../../img/shell.png"
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
+/* fontawesome 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+
+const icon = <FontAwesomeIcon icon={solid('user-secret')} />
+*/
+
 const Contact = () => {
     const formRef = useRef();
     const API_KEY = process.env.REACT_APP_API_KEY;
