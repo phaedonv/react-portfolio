@@ -79,3 +79,8 @@ button {
     font-weight: 500;
     cursor: pointer;
 }
+
+::placeholder {
+    color: #59b256;
+    opacity: 0.7;
+}
