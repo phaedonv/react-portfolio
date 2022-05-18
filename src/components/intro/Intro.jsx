@@ -1,7 +1,7 @@
 import React from 'react'
 
 import "./intro.css"
-import Me from '../../img/cartoonme.png'
+import Me from '../../img/me2.png'
 
 const Intro = () => {
   return (
