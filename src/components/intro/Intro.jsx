@@ -1,7 +1,7 @@
 import React from 'react'
 
 import "./intro.css"
-import Me from '../../img/me2.png'
+import Me from '../../img/me2cr.png'
 
 const Intro = () => {
   return (
@@ -12,11 +12,11 @@ const Intro = () => {
           <h1 className='i-name'>Phaedon V.</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">Full Stack Developer</div>
               <div className="i-title-item">UI/UX Designer</div>
+              <div className="i-title-item">IT Consultant</div>
               <div className="i-title-item">Content Creator</div>
               <div className="i-title-item">Crypto Artist</div>
-              <div className="i-title-item">Cyber Security</div>
             </div>
           </div>
           <p className="i-desc">
