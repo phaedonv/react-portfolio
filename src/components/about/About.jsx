@@ -62,14 +62,12 @@ const About = () => {
         <div className="a-right">
             <h1 className="a-title">About Me</h1>
             <p className="a-sub">
-            It is a long established fact that a reader will be distracted by the
-            readable content.
+            A lifelong learner with a passion in technology and coding.
             </p>
             <p className="a-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+            Having the chance to work on a wide variety of different projects, 
+            there's always something to interest me. I am motivated by the feeling 
+            of being able to solve problems and help people in their everyday lives.
             </p>
             <div className="a-award">
                 <img src={Award} alt="" className="a-award-img" />
