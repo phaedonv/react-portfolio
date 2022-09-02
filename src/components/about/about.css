@@ -44,6 +44,12 @@
     border-radius: 20px;
 }
 
+.a-skill-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
 .a-title {
     font-weight: 400;
 }

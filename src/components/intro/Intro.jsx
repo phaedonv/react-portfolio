@@ -20,7 +20,7 @@ const Intro = () => {
             </div>
           </div>
           <p className="i-desc">
-              I am a full stack web developer graduate, seeking new opportunities! 
+              I am a full stack web developer graduate, seeking opportunities! 
               Being motivated and eager to learn new skills and technologies, 
               I always look for new ways to evolve.
           </p>

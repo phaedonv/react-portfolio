@@ -70,12 +70,14 @@ const About = () => {
             of being able to solve problems and help people in their everyday lives.
             </p>
             <div className="a-award">
-                <img src={Award} alt="" className="a-award-img" />
+                {/* <img src={Award} alt="" className="a-award-img" /> */}
+                <img src="https://res.cloudinary.com/thisisnotanimage/image/upload/v1662126611/Phaedonv_industries_portal/skilss_pivukq.gif" alt="" className="a-skill-img" />
+                
                 <div className="a-award-texts">
-                    <h4 className="a-award-title">International Github Awards 2021</h4>
-                    <p className="a-award-desc">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-                    and fugit.
+                    <h4 className="a-award-title">Skills & Technologies</h4>
+                    <p className="a-award-desc"> 
+                    Object-oriented programming, Ruby on Rails, JavaScript, React.js, 
+                    HTML5, CSS, SCSS, SASS, SQL, PostgreSQL, Git, Github, Product design, UX/UI, Wireframing, Mockups.
                     </p>
                 </div>
             </div>
