@@ -80,6 +80,9 @@ const About = () => {
                     HTML5, CSS, SCSS, SASS, SQL, PostgreSQL, Git, Github, Product design, UX/UI, Wireframing, Mockups.
                     </p>
                 </div>
+
+                {/*Here and below is the code for the skill logos-badges slider*/}
+
             </div>
         </div>
     </div>
