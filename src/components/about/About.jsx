@@ -87,19 +87,19 @@ const About = () => {
             {/*Here and below is the code for the skill logos-badges slider*/}
             <div className="icon-wrapper">
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={solid('user-secret')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('react')} size="4x" fade className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('css3-alt')} size="4x" fade className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('html5')} size="4x" fade className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('js')} size="4x" fade className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('python')} size="4x" fade className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
                     <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
