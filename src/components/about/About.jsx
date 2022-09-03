@@ -3,6 +3,9 @@ import React from 'react'
 import './about.css'
 import Award from '../../img/Github-logo2.png'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+
 const About = () => {
   return (
     <div className='a'>
@@ -80,9 +83,12 @@ const About = () => {
                     HTML5, CSS, SCSS, SASS, SQL, PostgreSQL, Git, Github, Product design, UX/UI, Wireframing, Mockups.
                     </p>
                 </div>
-
-                {/*Here and below is the code for the skill logos-badges slider*/}
-
+            </div>
+            {/*Here and below is the code for the skill logos-badges slider*/}
+            <div>
+                here will be the skill logos! 
+                <FontAwesomeIcon icon={solid('user-secret')} />
+                <FontAwesomeIcon icon={brands('twitter')} />
             </div>
         </div>
     </div>
