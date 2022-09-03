@@ -224,3 +224,15 @@ animation-delay: 2.5s;
         top: calc(100% + 40px);
     }
 }
+
+/*Here and below is the code for the skill logos-badges slider style*/
+
+.font-awesome-icon {
+    color: green;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

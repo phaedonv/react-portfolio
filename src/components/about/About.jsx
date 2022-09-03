@@ -85,10 +85,25 @@ const About = () => {
                 </div>
             </div>
             {/*Here and below is the code for the skill logos-badges slider*/}
-            <div>
-                here will be the skill logos! 
-                <FontAwesomeIcon icon={solid('user-secret')} />
-                <FontAwesomeIcon icon={brands('twitter')} />
+            <div className="icon-wrapper">
+                <div className="icon-item">
+                    <FontAwesomeIcon icon={solid('user-secret')} size="4x" fade className="font-awesome-icon"/>
+                </div>
+                <div className="icon-item">
+                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                </div>
+                <div className="icon-item">
+                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                </div>
+                <div className="icon-item">
+                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                </div>
+                <div className="icon-item">
+                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                </div>
+                <div className="icon-item">
+                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                </div>
             </div>
         </div>
     </div>
