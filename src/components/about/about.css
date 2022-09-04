@@ -11,6 +11,8 @@
     justify-content: center;
     position: relative;
     height: 100%;
+
+    z-index: 1;
 }
 
 .a-right {
@@ -222,5 +224,56 @@ animation-delay: 2.5s;
 @keyframes animate-position {
     to {
         top: calc(100% + 40px);
+    }
+}
+
+.full-award {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Here and below is the code for the skill logos-badges slider style*/
+
+.font-awesome-icon {
+    color: #FA3565;
+    background-image: linear-gradient(to right bottom, #ce19a2, #816feb, #009cff, #00b9e7, #12cbc0);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    --fa-animation-duration: 10s;
+
+    padding: 0 4vw;    
+}
+
+.icon-wrapper-title {
+    width: 100%;
+    overflow: hidden;
+}
+
+.icon-wrapper {
+    width: 230%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position: relative;
+
+    animation: movicon 9s ease-in-out infinite alternate;
+}
+
+@keyframes movicon {
+    25%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(-200px);
     }
 }
