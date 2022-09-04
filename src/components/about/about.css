@@ -11,6 +11,8 @@
     justify-content: center;
     position: relative;
     height: 100%;
+
+    z-index: 1;
 }
 
 .a-right {
@@ -250,11 +252,13 @@ animation-delay: 2.5s;
 }
 
 .icon-wrapper {
-    width: 100%;
+    width: 230%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+    position: relative;
 
     animation: movicon 9s ease-in-out infinite alternate;
 }

@@ -93,19 +93,25 @@ const About = () => {
                             <FontAwesomeIcon icon={brands('react')} size="4x" spin className="font-awesome-icon"/>
                         </div>
                         <div className="icon-item">
+                            <FontAwesomeIcon icon={brands('js')} size="4x" className="font-awesome-icon"/>
+                        </div>
+                        <div className="icon-item">
                             <FontAwesomeIcon icon={brands('css3-alt')} size="4x" className="font-awesome-icon"/>
                         </div>
                         <div className="icon-item">
                             <FontAwesomeIcon icon={brands('html5')} size="4x" className="font-awesome-icon"/>
                         </div>
                         <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('js')} size="4x" className="font-awesome-icon"/>
+                            <FontAwesomeIcon icon={brands('figma')} size="4x" className="font-awesome-icon"/>
                         </div>
                         <div className="icon-item">
                             <FontAwesomeIcon icon={brands('python')} size="4x" flip className="font-awesome-icon"/>
                         </div>
                         <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('react')} size="4x" spin spinReverse className="font-awesome-icon"/>
+                            <FontAwesomeIcon icon={brands('github')} size="4x" className="font-awesome-icon"/>
+                        </div>
+                        <div className="icon-item">
+                            <FontAwesomeIcon icon={solid('database')} size="4x" className="font-awesome-icon"/>
                         </div>
                     </div>
                 </div>
