@@ -225,9 +225,15 @@ animation-delay: 2.5s;
     }
 }
 
+.full-award {
+    display: flex;
+    flex-direction: column;
+}
+
 /*Here and below is the code for the skill logos-badges slider style*/
 
 .font-awesome-icon {
+    color: #FA3565;
     background-image: linear-gradient(to right bottom, #ce19a2, #816feb, #009cff, #00b9e7, #12cbc0);
 
     -webkit-background-clip: text;
@@ -235,7 +241,7 @@ animation-delay: 2.5s;
 
     --fa-animation-duration: 10s;
 
-    
+    padding: 0 4vw;    
 }
 
 .icon-wrapper-title {
