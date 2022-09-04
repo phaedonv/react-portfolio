@@ -260,7 +260,7 @@ animation-delay: 2.5s;
     flex-direction: row;
     position: relative;
 
-    animation: movicon 9s ease-in-out infinite alternate;
+    animation: movicon 10s ease-in-out infinite alternate;
 }
 
 @keyframes movicon {
