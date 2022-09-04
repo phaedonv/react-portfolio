@@ -87,7 +87,7 @@ const About = () => {
             {/*Here and below is the code for the skill logos-badges slider*/}
             <div className="icon-wrapper">
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('react')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('react')} size="4x" className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
                     <FontAwesomeIcon icon={brands('css3-alt')} size="4x" fade className="font-awesome-icon"/>
