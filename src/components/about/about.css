@@ -238,8 +238,32 @@ animation-delay: 2.5s;
     
 }
 
+.icon-wrapper-title {
+    width: 100%;
+    overflow: hidden;
+}
+
 .icon-wrapper {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: row;
+
+    animation: movicon 9s ease-in-out infinite alternate;
+}
+
+@keyframes movicon {
+    25%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    75%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
 }

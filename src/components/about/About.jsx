@@ -84,25 +84,28 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            {/*Here and below is the code for the skill logos-badges slider*/}
-            <div className="icon-wrapper">
-                <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('react')} size="4x" spin className="font-awesome-icon"/>
-                </div>
-                <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('css3-alt')} size="4x" flip className="font-awesome-icon"/>
-                </div>
-                <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('html5')} size="4x" flip className="font-awesome-icon"/>
-                </div>
-                <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('js')} size="4x" flip className="font-awesome-icon"/>
-                </div>
-                <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('python')} size="4x" flip className="font-awesome-icon"/>
-                </div>
-                <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('twitter')} size="4x" flip className="font-awesome-icon"/>
+
+            <div className='icon-wrapper-title'>
+                {/*Here and below is the code for the skill logos-badges slider*/}
+                <div className="icon-wrapper">
+                    <div className="icon-item">
+                        <FontAwesomeIcon icon={brands('react')} size="4x" spin className="font-awesome-icon"/>
+                    </div>
+                    <div className="icon-item">
+                        <FontAwesomeIcon icon={brands('css3-alt')} size="4x" className="font-awesome-icon"/>
+                    </div>
+                    <div className="icon-item">
+                        <FontAwesomeIcon icon={brands('html5')} size="4x" className="font-awesome-icon"/>
+                    </div>
+                    <div className="icon-item">
+                        <FontAwesomeIcon icon={brands('js')} size="4x" className="font-awesome-icon"/>
+                    </div>
+                    <div className="icon-item">
+                        <FontAwesomeIcon icon={brands('python')} size="4x" flip className="font-awesome-icon"/>
+                    </div>
+                    <div className="icon-item">
+                        <FontAwesomeIcon icon={brands('react')} size="4x" spin spinReverse className="font-awesome-icon"/>
+                    </div>
                 </div>
             </div>
         </div>
