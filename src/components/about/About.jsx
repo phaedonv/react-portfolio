@@ -77,7 +77,7 @@ const About = () => {
                 <img src="https://res.cloudinary.com/thisisnotanimage/image/upload/v1662126611/Phaedonv_industries_portal/skilss_pivukq.gif" alt="" className="a-skill-img" />
                 
                 <div className="a-award-texts">
-                    <h4 className="a-award-title">Skills & Technologies</h4>
+                    <h4 className="a-award-title font-awesome-icon">Skills & Technologies</h4>
                     <p className="a-award-desc"> 
                     Object-oriented programming, Ruby on Rails, JavaScript, React.js, 
                     HTML5, CSS, SCSS, SASS, SQL, PostgreSQL, Git, Github, Product design, UX/UI, Wireframing, Mockups.
@@ -87,22 +87,22 @@ const About = () => {
             {/*Here and below is the code for the skill logos-badges slider*/}
             <div className="icon-wrapper">
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('react')} size="4x" className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('react')} size="4x" spin className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('css3-alt')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('css3-alt')} size="4x" flip className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('html5')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('html5')} size="4x" flip className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('js')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('js')} size="4x" flip className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('python')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('python')} size="4x" flip className="font-awesome-icon"/>
                 </div>
                 <div className="icon-item">
-                    <FontAwesomeIcon icon={brands('twitter')} size="4x" fade className="font-awesome-icon"/>
+                    <FontAwesomeIcon icon={brands('twitter')} size="4x" flip className="font-awesome-icon"/>
                 </div>
             </div>
         </div>
