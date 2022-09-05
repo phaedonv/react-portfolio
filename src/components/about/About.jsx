@@ -113,6 +113,9 @@ const About = () => {
                         <div className="icon-item">
                             <FontAwesomeIcon icon={solid('database')} size="4x" className="font-awesome-icon"/>
                         </div>
+                        <div className="icon-item">
+                            <FontAwesomeIcon icon={brands('git-alt')} size="4x" className="font-awesome-icon"/>
+                        </div>
                     </div>
                 </div>
             </div>
