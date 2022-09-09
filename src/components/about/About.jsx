@@ -2,14 +2,18 @@ import React from 'react'
 
 import './about.css'
 import Award from '../../img/Github-logo2.png'
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+import { useRef } from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper';
 
 // Import Swiper styles
-//import 'swiper/css';
+import 'swiper/swiper.min.css';
+
+import styles from './about.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
@@ -97,6 +101,17 @@ const About = () => {
                 <div className='icon-wrapper-title'>
                     {/*Here and below is the code for the skill logos-badges slider*/}
                     <div className="icon-wrapper">
+                    <Swiper
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={5}
+                    slidesPerView={3}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    >
                         <SwiperSlide>
                                 <div className="icon-item">
                                     <FontAwesomeIcon icon={brands('react')} size="4x" spin className="font-awesome-icon"/>
@@ -147,26 +162,26 @@ const About = () => {
                                     <FontAwesomeIcon icon={brands('node')} size="4x" className="font-awesome-icon"/>
                                 </div>
                         </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
 
-                <Swiper
-                    // install Swiper modules
-                    modules={[Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={50}
-                    slidesPerView={3}
-                    navigation
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log('slide change')}
-                    >
-                    <SwiperSlide>Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                </Swiper>
-
+                <div className={styles.container}>
+                    <Swiper
+                        // install Swiper modules
+                        modules={[Navigation, EffectFade]}
+                        navigation
+                        effect
+                        speed={800}
+                        slidesPerView={1}
+                        loop
+                        className={styles.myswiper}
+                        >
+                        <SwiperSlide className={styles.swiperslide}>
+                            skat0ul4 1
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
         </div>
     </div>

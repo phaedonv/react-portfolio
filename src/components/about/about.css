@@ -232,7 +232,7 @@ animation-delay: 2.5s;
     flex-direction: column;
 }
 
-/*Here and below is the code for the skill logos-badges slider style*/
+/*Here and below is the code for the skill logos-badges slider style
 
 .font-awesome-icon {
     color: #FA3565;
@@ -276,4 +276,12 @@ animation-delay: 2.5s;
     100%{
         transform: translateX(-200px);
     }
+}
+*/
+
+/*Swiper-wraper CSS*/
+
+.swiper {
+    color: lime;
+    display: flex;
 }
