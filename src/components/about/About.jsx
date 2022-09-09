@@ -3,6 +3,14 @@ import React from 'react'
 import './about.css'
 import Award from '../../img/Github-logo2.png'
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+// Import Swiper styles
+//import 'swiper/css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
 
@@ -89,38 +97,76 @@ const About = () => {
                 <div className='icon-wrapper-title'>
                     {/*Here and below is the code for the skill logos-badges slider*/}
                     <div className="icon-wrapper">
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('react')} size="4x" spin className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('js')} size="4x" className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('css3-alt')} size="4x" className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('html5')} size="4x" className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('figma')} size="4x" className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('python')} size="4x" flip className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('github')} size="4x" className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={solid('database')} size="4x" className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('git-alt')} size="4x" className="font-awesome-icon"/>
-                        </div>
-                        <div className="icon-item">
-                            <FontAwesomeIcon icon={brands('node')} size="4x" className="font-awesome-icon"/>
-                        </div>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('react')} size="4x" spin className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('js')} size="4x" className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('css3-alt')} size="4x" className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('html5')} size="4x" className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('figma')} size="4x" className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('python')} size="4x" flip className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('github')} size="4x" className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={solid('database')} size="4x" className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('git-alt')} size="4x" className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('node')} size="4x" className="font-awesome-icon"/>
+                                </div>
+                        </SwiperSlide>
                     </div>
                 </div>
+
+                <Swiper
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    navigation
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                    >
+                    <SwiperSlide>Slide 1</SwiperSlide>
+                    <SwiperSlide>Slide 2</SwiperSlide>
+                    <SwiperSlide>Slide 3</SwiperSlide>
+                    <SwiperSlide>Slide 4</SwiperSlide>
+                </Swiper>
+
             </div>
         </div>
     </div>
