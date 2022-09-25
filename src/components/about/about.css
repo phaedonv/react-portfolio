@@ -269,6 +269,9 @@ animation-delay: 2.5s;
 .swiper {
     display: flex;
     justify-content: space-evenly;
+
+    margin-left: auto;
+    margin-right: 15vw;
 }
 
 #skill-swipper {
