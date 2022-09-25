@@ -71,8 +71,14 @@
     justify-content: space-between;
 }
 
+.a-award img {
+    filter: drop-shadow(2px 4px 6px #52b256);
+}
+
 .a-award-texts {
     width: 70%;
+
+    overflow: hidden;
 }
 
 .a-award-title {
@@ -232,7 +238,7 @@ animation-delay: 2.5s;
     flex-direction: column;
 }
 
-/*Here and below is the code for the skill logos-badges slider style*/
+/*Here and below is the code for the skill logos-badges slider style
 
 .font-awesome-icon {
     color: #FA3565;
@@ -245,23 +251,37 @@ animation-delay: 2.5s;
 
     padding: 0 4vw;    
 }
+*/
 
-.icon-wrapper-title {
-    width: 100%;
-    overflow: hidden;
+/*Swiper-wraper CSS*/
+
+.fa-4x {
+    color: #52B256;
+    display: block !important;
+    background: -webkit-linear-gradient(#9c47fc, #356ad2) !important;
+
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+
+    filter: drop-shadow(2px 0px 2px #F3E23F);
 }
 
-.icon-wrapper {
-    width: 230%;
+.swiper {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
-    position: relative;
+
+    margin-left: auto;
+    margin-right: 15vw;
+}
+
+#skill-swipper {
+    padding-top: 3vh;
+    width: 30vw;
+    height: 7vh;
 
     animation: movicon 10s ease-in-out infinite alternate;
 }
+
 
 @keyframes movicon {
     25%{
