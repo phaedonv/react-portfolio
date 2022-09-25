@@ -262,6 +262,8 @@ animation-delay: 2.5s;
 
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
+
+    filter: drop-shadow(2px 0px 2px #F3E23F);
 }
 
 .swiper {
