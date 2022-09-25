@@ -8,7 +8,7 @@ import { useRef } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, FreeMode } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/swiper.min.css';
@@ -100,6 +100,7 @@ const About = () => {
                         </p>
                         <div id = "skill-swipper">
                             <Swiper
+                                slidesPerView={4}
                                 spaceBetween={30}
                                 centeredSlides={true}
                                 autoplay={{
@@ -109,19 +110,61 @@ const About = () => {
                                 pagination={{
                                 clickable: true,
                                 }}
-                                navigation={true}
-                                modules={[Autoplay, Pagination, Navigation]}
+                                navigation={false}
+                                modules={[Autoplay, FreeMode, Pagination, Navigation]}
                                 className="mySwiper"
                             >
-                                <SwiperSlide>Slide 1</SwiperSlide>
-                                <SwiperSlide>Slide 2</SwiperSlide>
-                                <SwiperSlide>Slide 3</SwiperSlide>
-                                <SwiperSlide>Slide 4</SwiperSlide>
-                                <SwiperSlide>Slide 5</SwiperSlide>
-                                <SwiperSlide>Slide 6</SwiperSlide>
-                                <SwiperSlide>Slide 7</SwiperSlide>
-                                <SwiperSlide>Slide 8</SwiperSlide>
-                                <SwiperSlide>Slide 9</SwiperSlide>
+                                <SwiperSlide>
+                                <div className="icon-item">
+                                    <FontAwesomeIcon icon={brands('react')} size="4x" spin className="font-awesome-icon"/>
+                                </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={brands('js')} size="4x" className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={brands('css3-alt')} size="4x" className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={brands('html5')} size="4x" className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={brands('figma')} size="4x" className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={brands('python')} size="4x" flip className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={brands('github')} size="4x" className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={solid('database')} size="4x" className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={brands('git-alt')} size="4x" className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                        <div className="icon-item">
+                                            <FontAwesomeIcon icon={brands('node')} size="4x" className="font-awesome-icon"/>
+                                        </div>
+                                </SwiperSlide>
+                                
                             </Swiper>
     
                     </div>

@@ -73,6 +73,8 @@
 
 .a-award-texts {
     width: 70%;
+
+    overflow: hidden;
 }
 
 .a-award-title {
@@ -245,23 +247,23 @@ animation-delay: 2.5s;
 
     padding: 0 4vw;    
 }
+*/
 
-.icon-wrapper-title {
-    width: 100%;
-    overflow: hidden;
+/*Swiper-wraper CSS*/
+
+.swiper {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.icon-wrapper {
-    width: 230%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    position: relative;
+#skill-swipper {
+    padding-top: 3vh;
+    width: 30vw;
+    height: 7vh;
 
     animation: movicon 10s ease-in-out infinite alternate;
 }
+
 
 @keyframes movicon {
     25%{
@@ -276,23 +278,4 @@ animation-delay: 2.5s;
     100%{
         transform: translateX(-200px);
     }
-}
-*/
-
-/*Swiper-wraper CSS*/
-
-#skill-swipper {
-    padding-top: 7vh;
-    width: 10vw;
-    height: 4vh;
-}
-
-.myswiper {
-    color: lime;
-    width: 100%;
-  height: 100%;
-}
-
-.container .myswiper .swiperslide {
-
 }
