@@ -90,7 +90,7 @@ const About = () => {
             <div className='full-award'>
                 <div className="a-award">
                     {/* <img src={Award} alt="" className="a-award-img" /> */}
-                    <img src="https://res.cloudinary.com/thisisnotanimage/image/upload/v1662126611/Phaedonv_industries_portal/skilss_pivukq.gif" alt="" className="a-skill-img" />
+                    <img src="https://media.giphy.com/media/B2yAtZsNzuxDnsXWfB/giphy.gif" alt="" className="a-skill-img" />
                     
                     <div className="a-award-texts">
                         <h4 className="a-award-title font-awesome-icon">Skills & Technologies</h4>

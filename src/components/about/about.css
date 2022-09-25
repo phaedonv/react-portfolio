@@ -71,6 +71,10 @@
     justify-content: space-between;
 }
 
+.a-award img {
+    filter: drop-shadow(2px 4px 6px #52b256);
+}
+
 .a-award-texts {
     width: 70%;
 
@@ -250,6 +254,15 @@ animation-delay: 2.5s;
 */
 
 /*Swiper-wraper CSS*/
+
+.fa-4x {
+    color: #52B256;
+    display: block !important;
+    background: -webkit-linear-gradient(#9c47fc, #356ad2) !important;
+
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
 
 .swiper {
     display: flex;
