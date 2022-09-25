@@ -281,6 +281,12 @@ animation-delay: 2.5s;
 
 /*Swiper-wraper CSS*/
 
+#skill-swipper {
+    padding-top: 7vh;
+    width: 10vw;
+    height: 4vh;
+}
+
 .myswiper {
     color: lime;
     width: 100%;
