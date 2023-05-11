@@ -6,8 +6,8 @@ export const projects = [
     },
     {
       id: 2,
-      img: "https://res.cloudinary.com/thisisnotanimage/image/upload/v1612352318/TunesOfFreedom_oqf7n2.png",
-      link: "https://tunesoffreedom.herokuapp.com/",
+      img: "https://res.cloudinary.com/thisisnotanimage/image/upload/v1683785153/Recipio%20App/recipio_scroller_ycdevq.png",
+      link: "https://recipio.netlify.app/",
     },
     {
       id: 3,
