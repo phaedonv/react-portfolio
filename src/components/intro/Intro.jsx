@@ -13,16 +13,18 @@ const Intro = () => {
           <div className="i-title">
             <div className="i-title-wrapper">
               <div className="i-title-item">Full Stack Developer</div>
+              <div className="i-title-item">Network Engineer</div>
+              <div className="i-title-item">Virtualization Specialist</div>
               <div className="i-title-item">UI/UX Designer</div>
               <div className="i-title-item">IT Consultant</div>
               <div className="i-title-item">Content Creator</div>
-              <div className="i-title-item">Crypto Artist</div>
             </div>
           </div>
           <p className="i-desc">
-              I am a full stack web developer graduate, seeking opportunities! 
-              Being motivated and eager to learn new skills and technologies, 
-              I always look for new ways to evolve.
+            I am a Full Stack Developer, 
+            lifelong learner with a passion in technology and coding. 
+            Having the chance to work on a wide variety of different projects, 
+            there's always something to interest me. Currently I am working at <a id='catalink' href="https://catalink.eu" target="_blank" rel="noreferrer">Catalink LTD </a> as a Software Developer.
           </p>
         </div>
         <svg

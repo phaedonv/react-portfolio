@@ -14,7 +14,7 @@ export const projects = [
       img: "https://res.cloudinary.com/thisisnotanimage/image/upload/v1612352318/TunesOfFreedom_oqf7n2.png",
       link: "https://tunesoffreedom.herokuapp.com/",
     },
-    {
+    /*{
       id: 4,
       img: "https://res.cloudinary.com/thisisnotanimage/image/upload/v1612352318/TunesOfFreedom_oqf7n2.png",
       link: "https://tunesoffreedom.herokuapp.com/",
@@ -28,5 +28,5 @@ export const projects = [
       id: 6,
       img: "https://res.cloudinary.com/thisisnotanimage/image/upload/v1612352318/TunesOfFreedom_oqf7n2.png",
       link: "https://tunesoffreedom.herokuapp.com/",
-    },
+    },*/
   ];

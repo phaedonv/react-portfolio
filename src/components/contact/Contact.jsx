@@ -40,17 +40,17 @@ const Contact = () => {
                 <h1 className="c-title">Contact Me</h1>
                 <h4 className="c-title-label">Let's discuss your project.</h4>
                 <div className="c-info">
-                    <div className="c-info-item">
+                    <div className="c-info-item" id='phone'>
                         <img src={logo} alt="" className="c-icon" />
-                        +32 xxxx xx xx xx
+                        +357 XX XXXX XX
                     </div>
                     <div className="c-info-item">
                         <img src={logo} alt="" className="c-icon" />
-                        phaedonv@protonmail.com
+                        phaedonv@catalink.eu
                     </div>
                     <div className="c-info-item">
                         <img src={logo} alt="" className="c-icon" />
-                        Brussels, Belgium 50°51′N 4°21′E
+                        Nicosia, Cyprus
                     </div>
                 </div>
             </div>
